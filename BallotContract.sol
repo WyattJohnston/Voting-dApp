@@ -20,7 +20,7 @@ contract Ballot {
     Proposal[] public proposals;
 
     constructor() public{
-        string[4] memory proposalNames=["Spiderman","007","Jungle Cruise","Dune"];
+        string[13] memory proposalNames=["Jo Jorgensen","Kanye West","Brock Pierce","Brian Carroll","Howie Hawkins", "C.L. Gammon", "Phil Collins", "Gloria La Riva", "John Richard Myers", "Don Blankenship", "Joseph R. Biden","Roque De La Fuente", "Donald J. Trump"];
         chairperson = msg.sender;
         voters[chairperson].weight=1;
         for(uint i=0; i<proposalNames.length; i++)
